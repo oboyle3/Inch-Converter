@@ -1,0 +1,43 @@
+import java.util.*;
+public class inchConverter {
+   public static void main(String [] args){
+   Scanner keyboard = new Scanner(System.in);
+   
+   System.out.println("enter 1 for inches,2 for feet, 3 for yards,4 for miles ");
+   double choice=keyboard.nextDouble();
+   double inches,feet,yards,miles;
+   
+   
+   if (choice ==1){
+   System.out.println("enter the amouyt of inches travelled ");
+   double inchesTrav= keyboard.nextInt();
+   System.out.println(" you have travlled " +inchesTrav+ "inches");
+   }
+   else if (choice ==2){
+   System.out.println("enter the amout of feet travveled");
+   double feetTrav= keyboard.nextInt();
+   double conversionOne= feetTrav*12;
+   System.out.println(feetTrav+ "feet converted to inches is "+ conversionOne);
+   }
+   else if (choice ==3) {
+   System.out.println("enter the amount of yards traveled");
+   double yardsTrav= keyboard.nextInt();
+   double conversionTwo= yardsTrav*36;
+   System.out.println(yardsTrav+ "yards converted to inches is " + conversionTwo);
+   }
+   else if (choice ==4) {
+   System.out.println("enter the amount of miles travled");
+   double milesTrav= keyboard.nextInt();
+   double conversionThree= milesTrav*63360;
+   System.out.println(milesTrav+ "miles converted to inches is " +conversionThree);
+   }
+   
+   else if (choice<4){
+   System.out.println("error choose valid number");
+   }
+   else    
+   System.out.println("error chooce a valid number");
+   
+     
+     }
+  }
